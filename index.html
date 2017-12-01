@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Formulario </title>
+    <style>
+
+    .error_input{
+      border: solid 3px red;
+    }
+    .error {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <form>
+			<h2> Formulario  </h2>
+				<label> Nombre:
+          <input type="text" name="name" id="name">
+						<span class="error"></span>
+         </label>
+
+        <br><br>
+
+				<label> Apellido:
+          <input type="text" name="apellido" id="apellido">
+					<span class="error"></span>
+        </label>
+
+        <br><br>
+
+			<label> Email:
+        <input type="text" name="email" id="email">
+        <span class="error"></span>
+			 <br><br>
+      </label>
+
+      <label> Contraseña:
+        <input id="password" type="password" name="password">
+        <span class="error"></span>
+        <em> Ver password </em>
+        <br><br>
+      </label>
+
+			<label> Pais:
+        <select id="pais" name="pais">
+              <option value=""> Elegi	</option>
+              <option value="Ar"> Argentina </option>
+              <option value="Col"> Colombia</option>
+              <option value="Chi"> Chile </option>
+        </select>
+          <span class="error"></span>
+      </label>
+			  <br><br>
+
+      <input type="submit" name="ENVIAR">
+
+		</form>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
